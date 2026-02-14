@@ -1,0 +1,11 @@
+{
+  "name": "comparacursos",
+  "version": "1.0.0",
+  "description": "Web para comparar cursos de tecnología en LATAM con MySQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "check": "node --check server.js && node --check public/app.js"
+  }
+}
