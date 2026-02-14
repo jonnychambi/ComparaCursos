@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ComparaCursos | Encuentra el mejor curso tech</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content container">
+        <p class="brand">ComparaCursos</p>
+        <h1>Cursos de tecnología para el mercado latinoamericano</h1>
+        <p>
+          Busca, filtra y compara en segundos contenido, docentes, modalidad,
+          institución, duración y precio.
+        </p>
+
+        <form id="search-form" class="search-box" aria-label="Buscador de cursos">
+          <label for="search-input" class="sr-only">Buscar curso</label>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Ej: Data Science, Frontend, Ciberseguridad..."
+            autocomplete="off"
+          />
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="filters" aria-label="Filtros avanzados">
+        <h2>Filtros</h2>
+        <div class="filters__grid">
+          <label>
+            Modalidad
+            <select id="modalidad-filter">
+              <option value="">Todas</option>
+              <option value="Sincrono">Sincrono</option>
+              <option value="Asincrono">Asincrono</option>
+              <option value="Hibrido">Hibrido</option>
+            </select>
+          </label>
+
+          <label>
+            Institución
+            <select id="institucion-filter">
+              <option value="">Todas</option>
+            </select>
+          </label>
+
+          <label>
+            Precio máximo (USD)
+            <input id="precio-filter" type="number" min="0" step="10" placeholder="Sin límite" />
+          </label>
+
+          <label>
+            Ordenar por
+            <select id="orden-filter">
+              <option value="relevancia">Relevancia</option>
+              <option value="precio-asc">Precio: menor a mayor</option>
+              <option value="precio-desc">Precio: mayor a menor</option>
+              <option value="horas-desc">Horas: mayor a menor</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section class="results" aria-live="polite">
+        <div class="results__header">
+          <h2>Cursos encontrados</h2>
+          <span id="result-count">0 resultados</span>
+        </div>
+        <div id="course-list" class="course-list"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
