@@ -1,0 +1,9 @@
+[
+  {"id":"i1","name":"Andes Tech School","country":"Colombia","programCount":24,"description":"Escuela especializada en data, IA y desarrollo de software para perfiles técnicos.","categories":["Data","IA","Software"]},
+  {"id":"i2","name":"CodeLatam","country":"México","programCount":18,"description":"Programas prácticos de programación y producto para acelerar talento digital.","categories":["Frontend","Backend","Producto"]},
+  {"id":"i3","name":"Universidad Nova","country":"Perú","programCount":12,"description":"Oferta académica de posgrado orientada a liderazgo tecnológico y estrategia.","categories":["Transformación","Ciberseguridad","Gestión"]},
+  {"id":"i4","name":"Rocket Academy","country":"Chile","programCount":20,"description":"Bootcamps intensivos con mentoría y enfoque de empleabilidad tech.","categories":["Full Stack","QA","Backend"]},
+  {"id":"i5","name":"Data Growth Institute","country":"Argentina","programCount":16,"description":"Instituto enfocado en analítica de negocio, BI y ciencia de datos aplicada.","categories":["BI","Analytics","Data Science"]},
+  {"id":"i6","name":"Nube Academy","country":"Uruguay","programCount":10,"description":"Programas cloud y DevOps para equipos que construyen productos escalables.","categories":["Cloud","DevOps","SRE"]},
+  {"id":"i7","name":"Instituto Tecnológico del Pacífico","country":"Ecuador","programCount":8,"description":"Posgrados tecnológicos para profesionales que buscan liderazgo estratégico.","categories":["IA","Data","Liderazgo"]}
+]
