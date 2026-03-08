@@ -70,9 +70,10 @@ Salida: carpeta `dist/` lista para publicación estática.
 npm run deploy
 ```
 
-### Nota de `base` para GitHub Pages
+### Nota de `base` para GitHub Pages y preview
 
-La configuración de Vite detecta `GITHUB_REPOSITORY` durante build y ajusta automáticamente `base` a `/<repo>/` para evitar páginas en blanco por rutas de assets. En local usa `base: /`.
+La configuración usa `base: './'` para resolver assets con rutas relativas.
+Esto evita vistas en blanco tanto en `npm run preview` como en despliegues de GitHub Pages (incluyendo deploy manual con `gh-pages`).
 
 ## Gestión de leads
 

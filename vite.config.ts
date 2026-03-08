@@ -1,11 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1];
-
-export default defineConfig(({ command }) => ({
+export default defineConfig({
   plugins: [react()],
-  // Dev/preview local: '/'
-  // Build para GitHub Pages (Actions): '/<repo>/'
-  base: command === 'build' && repoName ? `/${repoName}/` : '/',
-}));
+  // Base relativa para que el build funcione en preview local y en GitHub Pages
+  // sin depender de variables de entorno.
+  base: './',
+});
